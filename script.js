@@ -125,10 +125,7 @@ function toggleCheck () {
     container.addEventListener('click', tog)
 }
 
-let naruto = new Book("miyamato", "One Piece", 230, true);
-let naruto1 = new Book("miyamato", "Naruto", 230, false);
-addBooktoLibrary(naruto);
-addBooktoLibrary(naruto1);
+
 displayBooks();
 addNewBooktoDisplay();
 deleteChildren();
