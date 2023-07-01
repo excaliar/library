@@ -1,1 +1,186 @@
-eafjk
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 1fr;
+}
+
+.header {
+    grid-row: 1/2;
+    border-bottom: 3px solid black;
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bolder;
+    justify-content: center;
+}
+
+.Lib, 
+.add {
+    margin-left: auto;
+}
+
+.add {
+    margin-right: 15px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;;
+    font-size: 20px;
+    padding: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    color: black; 
+    text-decoration: none;
+    
+}
+
+.add:hover {
+    background-color: rgba(173, 216, 230, 0.385)
+}
+
+button:hover {
+    background-color: rgba(128, 128, 128, 0.335);
+}
+
+
+
+.Library {
+    grid-row: 2/3;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.contentContainer {
+    border: 3px solid black;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title {
+    align-self: center;
+    margin-top: 5px;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.author {
+    align-self: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.pageNo {
+    align-self: center;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper {
+    margin: 70px auto;
+    padding: 20px;
+    background: #e7e7e7;
+    border-radius: 10px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.wrapper .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.wrapper .con {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.cont {
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    padding: 20px 0;
+}
+
+form label {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+input[type=text], input[type=checkbox] textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=checkbox] {
+    margin-left: 20px;
+}
+
+.stop {
+    background-color: #413b3b;
+    color: #fff;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.read {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+button.content {
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    width: 80px;
+    height: 24px;
+    align-self: center;
+    border-radius: 5px;;
+}
+
+button.content:hover {
+    background-color: rgba(173, 216, 230, 0.385)
+}

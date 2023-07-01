@@ -7,8 +7,40 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <div class="Lib">Library</div>
+            <a href="#divOne" class="add">+ Add book</a>
+        </div>
+        <div class="Library">
+            
+        </div>
+
+        <div class="overlay" id="divOne">
+            <div class="wrapper">
+                <a href="#" class="close">&times;</a>
+                <div class="con">
+                    <div class="cont">
+                        <form class="fo">
+                            <label for="ttitle">Title:</label>
+                            <input type="text" id="ttitle">
+                            <label for="aauthor">Author:</label>
+                            <input type="text" id="aauthor">
+                            <label for="NOPage">Number of Pages</label>
+                            <input type="text" id ="NOPage">
+                            <label for="RRead">Read?</label>
+                            <input type="checkbox" id="RRead">
+                            <button class="stop" type="button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
